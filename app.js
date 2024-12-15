@@ -1,9 +1,7 @@
 // console.log("Hello World!");
 
-
 const user = document.querySelector("#userValue")
 const div = document.querySelector("#container")
-
 
 function checkWeather(){
 
@@ -12,7 +10,6 @@ function checkWeather(){
     }
 console.log(user.value);
     
-
 fetch(`https://api.weatherapi.com/v1/current.json?key=d780aac51f654ca6a4795517241512&q=${user.value}&aqi=no`)
 .then((res) => {
     return res.json()
@@ -29,8 +26,6 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=d780aac51f654ca6a479551724
     <h2 class="m-1">Feels like : ${res.current.feelslike_c} C</h2>
     <h2>Wind Speed : ${res.current.wind_kph}</h2>`
 })
-
-
 
 user.value = ""
 }
