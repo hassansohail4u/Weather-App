@@ -52,6 +52,7 @@ body{
     margin: 0px 500px;
     background-color: grey;
     box-shadow: 3px 3px 2px white;
+    border-radius: 10px;
 }
 
 .icon{
