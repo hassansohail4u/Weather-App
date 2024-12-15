@@ -13,7 +13,7 @@ function checkWeather(){
 console.log(user.value);
     
 
-fetch(`http://api.weatherapi.com/v1/current.json?key=d780aac51f654ca6a4795517241512&q=${user.value}&aqi=no`)
+fetch(`https://api.weatherapi.com/v1/current.json?key=d780aac51f654ca6a4795517241512&q=${user.value}&aqi=no`)
 .then((res) => {
     return res.json()
 })
